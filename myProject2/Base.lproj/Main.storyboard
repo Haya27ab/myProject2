@@ -37,39 +37,23 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="eYV-Q8-sgM">
                             <connections>
-                                <segue destination="2C0-cf-UNb" kind="show" id="tMi-rl-Dnr"/>
+                                <segue destination="2C0-cf-UNb" kind="show" identifier="addSegue" id="tMi-rl-Dnr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myTable" destination="YGa-ae-HOX" id="o4E-EY-taC"/>
-                        <segue destination="dA9-8c-8Ne" kind="show" id="kyE-QM-vR6"/>
+                        <segue destination="2C0-cf-UNb" kind="show" identifier="editSegue" id="Txy-6g-4zi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNW-le-U9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="176.81159420289856" y="40.848214285714285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3Zx-2d-mOy">
-            <objects>
-                <viewController id="dA9-8c-8Ne" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tbD-ed-r37">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="w5T-aT-29h"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="K9E-7e-8zS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="95J-jF-qvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2068" y="779"/>
-        </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="KeS-3t-7xh">
             <objects>
-                <viewController id="2C0-cf-UNb" customClass="ViewController" customModule="myProject2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2C0-cf-UNb" customClass="AddViewController" customModule="myProject2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1lu-hL-Y1f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,11 +101,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZX-7i-gA5">
-                                <rect key="frame" x="312" y="754" width="62" height="31"/>
+                                <rect key="frame" x="126" y="768" width="163" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="save"/>
                                 <connections>
                                     <action selector="Save:" destination="2C0-cf-UNb" eventType="touchUpInside" id="ngC-uo-d09"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HD-UI-3K3">
+                                <rect key="frame" x="121" y="729" width="172" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Update"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="2C0-cf-UNb" eventType="touchUpInside" id="Ocw-jG-IAk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -131,14 +124,14 @@
                             <constraint firstItem="7Xa-9U-cQJ" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="40" id="0dA-fb-iLG"/>
                             <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="YYK-lY-isY" secondAttribute="trailing" constant="157" id="2wB-MD-DKQ"/>
                             <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="saR-c5-Rbs" secondAttribute="trailing" constant="164" id="71q-jW-pvf"/>
-                            <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="xZX-7i-gA5" secondAttribute="trailing" constant="40" id="8O3-F0-KMN"/>
+                            <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="xZX-7i-gA5" secondAttribute="trailing" constant="125" id="8O3-F0-KMN"/>
                             <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="7Xa-9U-cQJ" secondAttribute="trailing" constant="40" id="9bx-rF-hzz"/>
                             <constraint firstItem="MtO-06-da9" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="20" id="Eag-rX-m3b"/>
                             <constraint firstItem="fom-1m-DLX" firstAttribute="bottom" secondItem="sJO-Mk-5d9" secondAttribute="bottom" constant="169" id="L23-yz-k1H"/>
                             <constraint firstItem="YYK-lY-isY" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="157" id="Msa-GA-oGN"/>
                             <constraint firstItem="sJO-Mk-5d9" firstAttribute="top" secondItem="saR-c5-Rbs" secondAttribute="bottom" constant="38.5" id="WxJ-ya-uB3"/>
                             <constraint firstItem="saR-c5-Rbs" firstAttribute="top" secondItem="MtO-06-da9" secondAttribute="bottom" constant="33" id="XCg-9D-NcL"/>
-                            <constraint firstItem="fom-1m-DLX" firstAttribute="bottom" secondItem="xZX-7i-gA5" secondAttribute="bottom" constant="77" id="bYO-AM-CyM"/>
+                            <constraint firstItem="fom-1m-DLX" firstAttribute="bottom" secondItem="xZX-7i-gA5" secondAttribute="bottom" constant="63" id="bYO-AM-CyM"/>
                             <constraint firstItem="saR-c5-Rbs" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="164" id="dfa-TM-bu2"/>
                             <constraint firstItem="sJO-Mk-5d9" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="87" id="ftb-Yf-NY1"/>
                             <constraint firstItem="YYK-lY-isY" firstAttribute="top" secondItem="fom-1m-DLX" secondAttribute="top" constant="29" id="hKW-64-YDN"/>
@@ -148,15 +141,17 @@
                             <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="sJO-Mk-5d9" secondAttribute="trailing" constant="87" id="pB3-rW-59p"/>
                             <constraint firstItem="4ft-bV-ToQ" firstAttribute="top" secondItem="7Xa-9U-cQJ" secondAttribute="bottom" constant="41" id="rYD-I4-gWm"/>
                             <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="MtO-06-da9" secondAttribute="trailing" constant="20" id="rdM-Xi-him"/>
-                            <constraint firstItem="xZX-7i-gA5" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="312" id="sI2-gT-kZN"/>
+                            <constraint firstItem="xZX-7i-gA5" firstAttribute="leading" secondItem="fom-1m-DLX" secondAttribute="leading" constant="126" id="sI2-gT-kZN"/>
                             <constraint firstItem="fom-1m-DLX" firstAttribute="trailing" secondItem="4ft-bV-ToQ" secondAttribute="trailing" constant="132" id="xhN-S1-oR2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6nW-Hh-hmX"/>
                     <connections>
-                        <outlet property="Addimag" destination="sJO-Mk-5d9" id="R7G-IH-b8u"/>
+                        <outlet property="Addimag" destination="sJO-Mk-5d9" id="34v-AR-w66"/>
                         <outlet property="Name" destination="7Xa-9U-cQJ" id="kct-RM-wYb"/>
                         <outlet property="informations" destination="MtO-06-da9" id="6xw-MP-dMf"/>
+                        <outlet property="saveButtonOutlet" destination="xZX-7i-gA5" id="K0n-r1-2uu"/>
+                        <outlet property="updateButtonOutlet" destination="0HD-UI-3K3" id="lU2-Wo-hFF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQt-hR-CeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -180,6 +175,9 @@
             <point key="canvasLocation" x="-713" y="41"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Txy-6g-4zi"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="D9AoO2EXUAAfaYW" width="749" height="930"/>
         <image name="plus" catalog="system" width="128" height="113"/>

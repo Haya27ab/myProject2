@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct Flower {
     var title : String
     var info: String
+    var photo : UIImage?
 }
 
 class Store {

@@ -34,7 +34,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="cell2" text="الوصف" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="hNd-Rr-bwr">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="cell2" editable="NO" text="الوصف" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="hNd-Rr-bwr">
                         <rect key="frame" x="136" y="29" width="175" height="83"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
