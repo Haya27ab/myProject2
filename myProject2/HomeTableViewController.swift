@@ -16,6 +16,11 @@ struct arrFlower{
 class HomeTableViewController: UITableViewController {
     var arrmyFlower = [arrFlower]()
     @IBOutlet var myTable: UITableView!
+    @IBAction func DelletAll(_ sender: Any) {
+        arrmyFlower.removeAll()
+        tableView.reloadData()
+    }
+    
     
     
     
@@ -57,5 +62,13 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+                arrmyFlower.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            }
+    }
 
+}
 }

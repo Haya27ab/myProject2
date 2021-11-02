@@ -30,6 +30,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Flower" id="hZO-KU-U17">
+                        <barButtonItem key="leftBarButtonItem" title="Dalut" image="trash" catalog="system" id="6Is-LK-EwR">
+                            <connections>
+                                <action selector="DelletAll:" destination="dlD-1W-WN0" id="N1o-9G-0i6"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="eYV-Q8-sgM">
                             <connections>
                                 <segue destination="2C0-cf-UNb" kind="show" id="tMi-rl-Dnr"/>
@@ -38,11 +43,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTable" destination="YGa-ae-HOX" id="o4E-EY-taC"/>
+                        <segue destination="dA9-8c-8Ne" kind="show" id="kyE-QM-vR6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNW-le-U9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="176.81159420289856" y="40.848214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Zx-2d-mOy">
+            <objects>
+                <viewController id="dA9-8c-8Ne" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tbD-ed-r37">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="w5T-aT-29h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K9E-7e-8zS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95J-jF-qvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="779"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KeS-3t-7xh">
@@ -161,6 +183,7 @@
     <resources>
         <image name="D9AoO2EXUAAfaYW" width="749" height="930"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
