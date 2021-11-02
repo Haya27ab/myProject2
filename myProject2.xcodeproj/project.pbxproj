@@ -16,6 +16,10 @@
 		64135190272ED25700EBCD1F /* myProject2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413518F272ED25700EBCD1F /* myProject2Tests.swift */; };
 		6413519A272ED25700EBCD1F /* myProject2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64135199272ED25700EBCD1F /* myProject2UITests.swift */; };
 		6413519C272ED25700EBCD1F /* myProject2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413519B272ED25700EBCD1F /* myProject2UITestsLaunchTests.swift */; };
+		641351A9272ED2FE00EBCD1F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641351A8272ED2FE00EBCD1F /* HomeTableViewController.swift */; };
+		641351B72730356600EBCD1F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641351B62730356600EBCD1F /* Model.swift */; };
+		641351BA2730361900EBCD1F /* FlowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641351B82730361900EBCD1F /* FlowerTableViewCell.swift */; };
+		641351BB2730361900EBCD1F /* FlowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 641351B92730361900EBCD1F /* FlowerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		64135195272ED25700EBCD1F /* myProject2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myProject2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64135199272ED25700EBCD1F /* myProject2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myProject2UITests.swift; sourceTree = "<group>"; };
 		6413519B272ED25700EBCD1F /* myProject2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myProject2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		641351A8272ED2FE00EBCD1F /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		641351B62730356600EBCD1F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		641351B82730361900EBCD1F /* FlowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerTableViewCell.swift; sourceTree = "<group>"; };
+		641351B92730361900EBCD1F /* FlowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlowerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				6413517A272ED25000EBCD1F /* SceneDelegate.swift */,
 				6413517C272ED25000EBCD1F /* ViewController.swift */,
 				6413517E272ED25000EBCD1F /* Main.storyboard */,
+				641351B82730361900EBCD1F /* FlowerTableViewCell.swift */,
+				641351B92730361900EBCD1F /* FlowerTableViewCell.xib */,
+				641351B62730356600EBCD1F /* Model.swift */,
+				641351A8272ED2FE00EBCD1F /* HomeTableViewController.swift */,
 				64135181272ED25600EBCD1F /* Assets.xcassets */,
 				64135183272ED25600EBCD1F /* LaunchScreen.storyboard */,
 				64135186272ED25600EBCD1F /* Info.plist */,
@@ -233,6 +245,7 @@
 			files = (
 				64135185272ED25600EBCD1F /* LaunchScreen.storyboard in Resources */,
 				64135182272ED25600EBCD1F /* Assets.xcassets in Resources */,
+				641351BB2730361900EBCD1F /* FlowerTableViewCell.xib in Resources */,
 				64135180272ED25000EBCD1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641351B72730356600EBCD1F /* Model.swift in Sources */,
+				641351A9272ED2FE00EBCD1F /* HomeTableViewController.swift in Sources */,
 				6413517D272ED25000EBCD1F /* ViewController.swift in Sources */,
 				64135179272ED25000EBCD1F /* AppDelegate.swift in Sources */,
+				641351BA2730361900EBCD1F /* FlowerTableViewCell.swift in Sources */,
 				6413517B272ED25000EBCD1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
