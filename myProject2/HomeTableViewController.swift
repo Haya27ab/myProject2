@@ -69,6 +69,7 @@ class HomeTableViewController: UITableViewController {
         performSegue(withIdentifier: "editSegue", sender: self)
         
     }
+    //index
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
             myStore.products.remove(at: indexPath.row)
